@@ -1,0 +1,137 @@
+#rasy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 70%;
+    height: 70vh;
+    background-color: bisque;
+    opacity: 0.9;
+    border-radius: 2%;
+}
+
+#rasy h1{
+    margin-top: 0;
+    width: 100%;
+}
+
+#rasy .but_rasy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+}
+
+#rasy .but_rasy button{
+    width: 20%;
+    padding: 1em 0 1em;
+    background-color: blanchedalmond;
+    opacity: 1;
+    border: 3px solid gray;
+    border-radius: 5%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#rasy .but_rasy button:hover{
+    color: brown;
+    border-color: brown;
+}
+
+#rasy #about_rasy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+} 
+
+#rasy #about_rasy #dog_img{
+    width: 30%;
+    height: 80%
+}
+
+#rasy #about_rasy #dog_img img{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+} 
+
+#rasy #about_rasy #dog_txt{
+    width: 40%;
+    height: 90%
+
+} 
+
+#rasy #about_rasy #dog_txt h3{
+    font-size: 26px;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#rasy #about_rasy #dog_txt p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1240px){
+    #rasy{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    #rasy #about_rasy #dog_img{
+        display: flex;
+        align-items: center;
+    }
+
+    #rasy #about_rasy #dog_img img{
+        height: 80%;
+    } 
+
+    #rasy #about_rasy #dog_txt h3{
+        font-size: 23px;
+        width: 100%;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    #rasy #about_rasy #dog_txt p{
+        font-size: 17px;
+    }
+
+    #rasy .but_rasy button{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 870px){
+    #rasy #about_rasy #dog_img img{
+        height: 60%;
+    } 
+}
+
+@media screen and (max-width: 720px){
+    #rasy #about_rasy{
+        flex-direction: column-reverse;
+    }
+
+    #rasy #about_rasy #dog_txt{
+        width: 80%;
+    }
+
+    #rasy #about_rasy #dog_img img{
+        height: 100%;
+        width: 100%;
+    } 
+
+}
